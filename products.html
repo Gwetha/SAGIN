@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SAGIN SMART FARM</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.google.com/share?selection.family=Poppins:ital,wght@100;200;300;400;600;700&display=swap"rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!---header-->
+       <section class="sub-header">
+          <nav>
+            <a href="index.html"><img src="images/sagin-logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="products.html">PRODUCTS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACTS</a></li>
+                </ul> 
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+          </nav>
+       
+          <h1>Our Products</h1>
+       </section>
+<!---products content-->
+<section class="products">
+    <h1>Seedlings We Sell</h1>
+    <p>Selling seedlings is more than just a transaction; it's an investment in the future. <br>
+        Each tiny seedling holds the promise of growth, vitality, and abundance. As a seedling seller,<br>
+         one becomes a steward of nature's potential, nurturing these delicate beginnings with care and expertise. 
+    </p>
+
+    <div class="row">
+        <div class="product-col">
+            <h3>Pawpaw F1 Solor, Calina and Malkia</h3>
+            <p>An early maturing dwarf and hermaphrodite variety (matures 8 months after transplanting).<br>
+                 Has red-fleshed and sweet fruits weighing 2kgs on average. Can bear 80-120 fruits annually.
+            </p>
+        </div>
+        <div class="product-col">
+            <h3>Grafted Hass Avocado</h3>
+            <p>Hass avocado is the most demanded avocado variety globally, 90% demanded of all avocado varieties. <br>
+                 Hass avocado has the longest shelf life among all varieties up to 2-3 weeks from the time of harvesting <br>
+                 which makes handling and shipment easy and convenient.
+            </p>
+        </div>
+        <div class="product-col">
+            <h3>Apple Mango</h3>
+            <p>A mature well managed apple tree can produce more than 500 fruits in a season. <br>
+                 An acre at a good spacing can accommodate 500 trees. A single tree can give a return of an average of 10000, <br>
+                 and a one-acre apple orchard can give a return of Ksh 500k.
+            </p>
+        </div>
+        <div class="product-col">
+            <h3>Farmer training</h3>
+            <p>Smallholder farmers produce far below their potential yields,<br>
+                 often due to poor farming practices and poor access to extension services. <br>
+                 We train farmers in good agricultural practices and business management skills to help them manage their land, <br>
+                 effectively cultivate their crops, and increase their harvests.
+            </p>
+        </div>
+    </div>
+
+ </section>
+
+ <!--gaden/farm-->
+ <section class="farm">
+    <h1>Our Sigan Smart Farm</h1>
+    <p>Sagin Smart Farm provides quality fruit tree seedlings to farmers at an affordable price. <br>
+         All our grafted seedlings are certified.</p>
+
+    <div class="row">
+        <div class="farm-col">
+            <img src="images/pawp.jpg">
+            <div class="layer">
+                <h3>Pawpaw F1 Solor, Calina and Malkia</h3>
+            </div>
+        </div>
+        <div class="farm-col">
+            <img src="images/avocado 3.jpg">
+            <div class="layer">
+                <h3>Grafted Hass Avocado</h3>
+            </div>
+        </div>
+        <div class="farm-col">
+            <img src="images/mango.jpg">
+            <div class="layer">
+                <h3>Apple Mango</h3>
+            </div>
+        </div>
+        <div class="farm-col">
+            <img src="images/farm.jpg">
+            <div class="layer">
+                <h3>Farmer training</h3>
+            </div>
+        </div>
+
+    </div>
+
+ </section>
+
+
+    
+    
+
+<!---footer-->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Sagin Smart Farm provides quality fruit tree seedlings to farmers at an affordable price. <br>
+        All our grafted seedlings are certified.</p>
+
+        <div class="icons">
+            <a href="https://www.facebook.com/profile.php?id=100069846783804" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/dschool_africa/" class="fa fa-instagram"></a>
+            <!---<a href="https://www.facebook.com/profile.php?id=100069846783804" class="fa fa-twitter"></a> --->
+            <a href="https://www.linkedin.com/in/dschool/?otpToken=MTAwNTE3ZTMxMDJiYzFjNGI2MjQwNGVkNDcxOGVmYjI4YWNlZDc0MzllYTc4ZTYxNzdjNDAzNmE0YzVkNWVmYmYwZGY4NDk5NzdkOGJiZjQ1M2FkYjdkZDcwMjQ0YTIwMGY2NzNkYjZjNDhmNGI3OTdlNmUsMSwx&midSig=2_z_3t154hDXg1&eid=3gmktm-lwprk8fy-93&midToken=AQEw2L7B5qroIg&trkEmail=eml-email_notification_digest_01-header-0-profile_glimmer-null-3gmktm%7Elwprk8fy%7E93-null-null&trk=eml-email_notification_digest_01-header-0-profile_glimmer&originalSubdomain=ke" class="fa fa-linkedin"></a>
+        </div>
+</section>
+
+
+
+
+
+<!----javascript for toggle menu--->
+    <script>
+        var navLinks = document.getElementById("navLinks"); 
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+
+
+    </body>
+</html>

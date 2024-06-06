@@ -1,0 +1,82 @@
+ 
+ <!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SAGIN SMART FARM</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.google.com/share?selection.family=Poppins:ital,wght@100;200;300;400;600;700&display=swap"rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!---header-->
+       <section class="sub-header">
+          <nav>
+            <a href="index.html"><img src="images/sagin-logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="products.html">PRODUCTS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACTS</a></li>
+                </ul> 
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+          </nav>
+       
+          <h1>About Us</h1>
+       </section>
+<!---about us content-->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>Best Seedling Seller</h1>
+                <p>We pride ourselves on offering a diverse selection of healthy and vibrant seedlings, <br>
+                   cultivated with care to ensure optimal growth and resilience. Our seedlings are sourced <br>
+                   from reputable nurseries and are meticulously cared for until they are ready for transplanting <br>
+                   into your garden or landscape.</p>
+                   <a href="blog.html" class="hero-btn red-btn">EXPLORE NOW!</a>
+            </div>
+            <div class="about-col">
+                <img src="images/seed 1.jpg">
+            </div>
+        </div>
+    </section>
+    
+
+<!---footer-->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Sagin Smart Farm provides quality fruit tree seedlings to farmers at an affordable price. <br>
+        All our grafted seedlings are certified.</p>
+
+        <div class="icons">
+            <a href="https://www.facebook.com/profile.php?id=100069846783804" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/dschool_africa/" class="fa fa-instagram"></a>
+            <!---<a href="https://www.facebook.com/profile.php?id=100069846783804" class="fa fa-twitter"></a> --->
+            <a href="https://www.linkedin.com/in/dschool/?otpToken=MTAwNTE3ZTMxMDJiYzFjNGI2MjQwNGVkNDcxOGVmYjI4YWNlZDc0MzllYTc4ZTYxNzdjNDAzNmE0YzVkNWVmYmYwZGY4NDk5NzdkOGJiZjQ1M2FkYjdkZDcwMjQ0YTIwMGY2NzNkYjZjNDhmNGI3OTdlNmUsMSwx&midSig=2_z_3t154hDXg1&eid=3gmktm-lwprk8fy-93&midToken=AQEw2L7B5qroIg&trkEmail=eml-email_notification_digest_01-header-0-profile_glimmer-null-3gmktm%7Elwprk8fy%7E93-null-null&trk=eml-email_notification_digest_01-header-0-profile_glimmer&originalSubdomain=ke" class="fa fa-linkedin"></a>
+        </div>
+
+</section>
+
+
+
+
+
+<!----javascript for toggle menu--->
+    <script>
+        var navLinks = document.getElementById("navLinks"); 
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+
+
+    </body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SAGIN SMART FARM</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.google.com/share?selection.family=Poppins:ital,wght@100;200;300;400;600;700&display=swap"rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!---header-->
+       <section class="sub-header">
+          <nav>
+            <a href="index.html"><img src="images/sagin-logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="products.html">PRODUCTS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACTS</a></li>
+                </ul> 
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+          </nav>
+       
+          <h1>Blog</h1>
+       </section>
+
+       <!----blog posts-->
+       <section class="blog">
+            <div class="row">
+                <div class="blog-left">
+                    <img src="images/farmer.jpg">
+                    <h2>One of our farmers checking the seedlings.</h2>
+                    <p>Seedlings are young plants that have recently sprouted from seeds. <br>
+                        They are typically fragile and need special care to ensure they grow into healthy, <br>
+                        mature plants. Seedlings require adequate light, water, nutrients, and protection from pests <br>
+                         and harsh weather conditions. They're often started indoors or in protected environments before <br>
+                          being transplanted into gardens or fields. These young plants represent the promise of future growth <br>
+                           and productivity in agriculture, gardening, and forestry.
+                    </p>
+                        <br>
+                    <p>
+                        Gardening is a wonderful hobby and practice that involves cultivating and nurturing plants, <br>
+                         flowers, fruits, vegetables, or ornamental foliage in outdoor or indoor spaces. <br>
+                          It can be as simple as growing a few herbs on a windowsill or as elaborate as designing <br>
+                           and maintaining an expansive garden landscape.
+                    </p>
+                    <br>
+                    <p>Gardening offers numerous benefits, including relaxation, exercise, stress relief, <br>
+                         and the satisfaction of watching plants grow and thrive. It also provides opportunities <br>
+                         to connect with nature, promote biodiversity, and produce fresh, nutritious food.
+                    </p>
+
+                    <div class="comment-box">
+                        <h3>Leave a Comment</h3>
+
+                        <form class="comment-form">
+                            <input type="text" placeholder="Enter Your Name">
+                            <input type="email" placeholder="Enter Email">
+                            <textarea rows="5" placeholder="Your Comment"></textarea>
+                            <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                        </form>
+                    </div>
+                </div>
+
+    
+                <div class="blog-right">
+                    <h3>Seedling Categories</h3>
+                    <div>
+                        <span>Pawpaw F1 Solor, Calina and Malkia</span>
+                        <span>150</span>
+                    </div>
+                    <div>
+                        <span>Grafted Hass Avocado</span>
+                        <span>75</span>
+                    </div>
+                    <div>
+                        <span>Apple Mango</span>
+                        <span>90</span>
+                    </div>
+                    <div>
+                        <span>Dragon Fruit</span>
+                        <span>40</span>
+                    </div>
+                    <div>
+                        <span>Sour Sap</span>
+                        <span>55</span>
+                    </div>
+                    <div>
+                        <span>Pixie Orange</span>
+                        <span>64</span>
+                    </div>
+                    <div>
+                        <span>Lemon</span>
+                        <span>35</span>
+                    </div>
+                    <div>
+                        <span>Red Strawberry</span>
+                        <span>102</span>
+                    </div>
+                    <div>
+                        <span>Red Grapes</span>
+                        <span>85</span>
+                    </div>
+                    <div>
+                        <span>Farmer training</span>
+                        <span>On Appointment</span>
+                    </div>
+                </div>
+            </div>
+       </section>
+
+
+    
+    
+
+<!---footer-->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Sagin Smart Farm provides quality fruit tree seedlings to farmers at an affordable price. <br>
+        All our grafted seedlings are certified.</p>
+
+        <div class="icons">
+            <a href="https://www.facebook.com/profile.php?id=100069846783804" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/dschool_africa/" class="fa fa-instagram"></a>
+            <!---<a href="https://www.facebook.com/profile.php?id=100069846783804" class="fa fa-twitter"></a> --->
+            <a href="https://www.linkedin.com/in/dschool/?otpToken=MTAwNTE3ZTMxMDJiYzFjNGI2MjQwNGVkNDcxOGVmYjI4YWNlZDc0MzllYTc4ZTYxNzdjNDAzNmE0YzVkNWVmYmYwZGY4NDk5NzdkOGJiZjQ1M2FkYjdkZDcwMjQ0YTIwMGY2NzNkYjZjNDhmNGI3OTdlNmUsMSwx&midSig=2_z_3t154hDXg1&eid=3gmktm-lwprk8fy-93&midToken=AQEw2L7B5qroIg&trkEmail=eml-email_notification_digest_01-header-0-profile_glimmer-null-3gmktm%7Elwprk8fy%7E93-null-null&trk=eml-email_notification_digest_01-header-0-profile_glimmer&originalSubdomain=ke" class="fa fa-linkedin"></a>
+        </div>
+
+</section>
+
+
+
+
+
+<!----javascript for toggle menu--->
+    <script>
+        var navLinks = document.getElementById("navLinks"); 
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+
+
+    </body>
+</html>

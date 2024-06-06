@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SAGIN SMART FARM</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.google.com/share?selection.family=Poppins:ital,wght@100;200;300;400;600;700&display=swap"rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!---header-->
+       <section class="sub-header">
+          <nav>
+            <a href="index.html"><img src="images/sagin-logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="products.html">PRODUCTS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACTS</a></li>
+                </ul> 
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+          </nav>
+       
+          <h1>Contact Us</h1>
+       </section>
+    <!---contact us-->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31918.16383041733!2d34.6643704175949!3d0.2805847635503699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x17803c49d5090337%3A0x3e10007d9fabb014!2sDschool%20smart%20Shop!5e0!3m2!1sen!2sus!4v1715578316539!5m2!1sen!2sus" br
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>0722 291 644</h5>
+                        <p>Monday to Saturday, 8:00AM-17:00PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <span>
+                        <h5>info@sagin.co.ke</h5>
+                        <p>Email Us Your Query!</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter Your Name" required>
+                    <input type="email" name="email" placeholder="Enter Your Email" required>
+                    <input type="text" name="subject" placeholder="Enter Your Subject" required>
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">SEND MESSAGE</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    
+
+<!---footer-->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Sagin Smart Farm provides quality fruit tree seedlings to farmers at an affordable price. <br>
+        All our grafted seedlings are certified.</p>
+
+        <div class="icons">
+            <a href="https://www.facebook.com/profile.php?id=100069846783804" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/dschool_africa/" class="fa fa-instagram"></a>
+            <!---<a href="https://www.facebook.com/profile.php?id=100069846783804" class="fa fa-twitter"></a> --->
+            <a href="https://www.linkedin.com/in/dschool/?otpToken=MTAwNTE3ZTMxMDJiYzFjNGI2MjQwNGVkNDcxOGVmYjI4YWNlZDc0MzllYTc4ZTYxNzdjNDAzNmE0YzVkNWVmYmYwZGY4NDk5NzdkOGJiZjQ1M2FkYjdkZDcwMjQ0YTIwMGY2NzNkYjZjNDhmNGI3OTdlNmUsMSwx&midSig=2_z_3t154hDXg1&eid=3gmktm-lwprk8fy-93&midToken=AQEw2L7B5qroIg&trkEmail=eml-email_notification_digest_01-header-0-profile_glimmer-null-3gmktm%7Elwprk8fy%7E93-null-null&trk=eml-email_notification_digest_01-header-0-profile_glimmer&originalSubdomain=ke" class="fa fa-linkedin"></a>
+        </div>
+</section>
+
+
+
+
+
+<!----javascript for toggle menu--->
+    <script>
+        var navLinks = document.getElementById("navLinks"); 
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+
+
+    </body>
+</html>
